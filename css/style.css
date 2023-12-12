@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* new code */
+.page-wrapper {
+  padding: 0px 40px;
+}
+
+.page-section {
+  background-color: aliceblue;
+  display: flex;
+}
+
+.page-section .header {
+  flex-basis: 20%;
+  background-color: lightgray;
+  border-right: 3px solid black;
+}
+
+.page-section .grid {
+  flex-basis: 80%;
+  background-color: grey;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas: 
+  "project-1 project-1"
+  "project-2 project-3"
+  "project-4 project-5"
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-color: yellow;
+}
+#project-2 {
+  grid-area: project-2;
+  background-color: blue;
+}
+#project-3 {
+  grid-area: project-3;
+  background-color: green;
+}
+#project-4 {
+  grid-area: project-4;
+  background-color: aqua;
+}
+#project-5 {
+  grid-area: project-5;
+  background-color: brown;
+}
+
+/* end of new code */
